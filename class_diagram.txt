@@ -1,0 +1,43 @@
+              +------------------+
+              |      Book        |
+              +------------------+
+              | - id             |
+              | - title          |
+              | - author         |
+              | - available      |
+              +------------------+
+              | + issueBook()    |
+              | + returnBook()   |
+              +------------------+
+
+              +------------------+
+              |     Member       |
+              +------------------+
+              | - id             |
+              | - name           |
+              +------------------+
+
+              +------------------+
+              |      Loan        |
+              +------------------+
+              | - bookId         |
+              | - memberId       |
+              | - date           |
+              +------------------+
+
+              +------------------+
+              |     Library      |
+              +------------------+
+              | - books          |
+              | - members        |
+              | - loans          |
+              +------------------+
+              | + searchBook()   |
+              | + issueBook()    |
+              | + returnBook()   |
+              | + saveToFile()   |
+              | + loadFromFile() |
+              +------------------+
+
+Library manages:
+Book + Member + Loan

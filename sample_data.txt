@@ -1,0 +1,16 @@
+LIBRARY SAMPLE DATA
+
+Books:
+1 | C++ Basics | Bjarne Stroustrup | Available
+2 | Python Basics | Guido van Rossum | Available
+3 | Data Structures | Mark Allen | Available
+
+Members:
+101 | Kanimozhi
+102 | Priya
+
+Sample Loan:
+Book ID: 1
+Member ID: 101
+Date: 01-10-2026
+Status: Returned
