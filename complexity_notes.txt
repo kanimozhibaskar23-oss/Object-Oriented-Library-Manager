@@ -1,0 +1,41 @@
+ALGORITHMS AND AUTOMATED TESTING
+Object-Oriented Library Manager
+
+1. Sorting by Book Title
+Algorithm: C++ std::sort()
+Time Complexity: O(n log n) average
+Space Complexity: O(log n) auxiliary space
+Purpose: Sorts books alphabetically by title.
+
+2. Sorting by Book ID
+Algorithm: C++ std::sort()
+Time Complexity: O(n log n) average
+Space Complexity: O(log n) auxiliary space
+Purpose: Sorts books in ascending order of book ID.
+
+3. Book Searching
+Algorithm: Linear Search
+Time Complexity: O(n)
+Space Complexity: O(1)
+Purpose: Searches the library for a book matching the given title.
+
+4. Library Report
+Algorithm: Single traversal of the books collection
+Time Complexity: O(n)
+Space Complexity: O(1)
+Purpose: Counts total, available, and issued books.
+
+AUTOMATED TEST RESULTS
+
+Test 1 - Sort by ID: PASS
+Test 2 - Sort by Title: PASS
+Test 3 - Search existing book: PASS
+Test 4 - Search non-existing book: PASS
+Test 5 - Invalid book ID: PASS
+Test 6 - Invalid return ID: PASS
+Test 7 - Library report: PASS
+
+Final Result:
+ALL AUTOMATED TESTS PASSED.
+
+The project includes normal, boundary/empty-result, and invalid-input scenarios.

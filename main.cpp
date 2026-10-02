@@ -28,6 +28,9 @@ int main() {
         cout << "\n4. Issue Book";
         cout << "\n5. Return Book";
         cout << "\n6. Save Data";
+        cout << "\n7. Sort Books by Title";
+        cout << "\n8. Sort Books by ID";
+        cout << "\n9. Generate Library Report";
         cout << "\n0. Exit";
         cout << "\nEnter your choice: ";
         cin >> choice;
@@ -84,6 +87,23 @@ int main() {
         else if (choice == 6) {
 
             library.saveToFile();
+
+        }
+        else if (choice == 7) {
+
+            library.sortBooksByTitle();
+            library.showBooks();
+
+        }
+        else if (choice == 8) {
+
+            library.sortBooksById();
+            library.showBooks();
+
+        }
+        else if (choice == 9) {
+
+            library.generateReport();
 
         }
         else if (choice == 0) {

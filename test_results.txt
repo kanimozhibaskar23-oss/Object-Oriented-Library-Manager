@@ -1,0 +1,25 @@
+AUTOMATED TEST RESULTS
+Object-Oriented Library Manager
+
+Date: 02-10-2026
+
+TEST 1 - Sort by ID: PASS
+TEST 2 - Sort by Title: PASS
+TEST 3 - Search existing book: PASS
+TEST 4 - Search non-existing book: PASS
+TEST 5 - Invalid book ID: PASS
+TEST 6 - Invalid return ID: PASS
+TEST 7 - Library report: PASS
+
+FINAL RESULT
+ALL AUTOMATED TESTS PASSED.
+
+Test Coverage:
+- Normal sorting case
+- Normal search case
+- Non-existing book search
+- Invalid book ID
+- Invalid return ID
+- Library report generation
+
+The automated test executable completed successfully without errors.

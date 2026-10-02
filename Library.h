@@ -22,6 +22,10 @@ public:
     void showMembers();
 
     void searchBook(string title);
+    void sortBooksByTitle();
+    void sortBooksById();
+    void generateReport();
+
     void issueBook(int bookId, int memberId, string date);
     void returnBook(int bookId);
 

@@ -1,6 +1,7 @@
 #include "Library.h"
 #include <iostream>
 #include <fstream>
+#include <algorithm>
 
 void Library::addBook(Book book) {
     books.push_back(book);
@@ -54,6 +55,46 @@ void Library::searchBook(string title) {
     if (!found) {
         cout << "\nBook not found.\n";
     }
+}
+
+// Sorting Strategy 1: Sort by Book Title
+void Library::sortBooksByTitle() {
+    sort(books.begin(), books.end(),
+         [](Book &a, Book &b) {
+             return a.getTitle() < b.getTitle();
+         });
+
+    cout << "\nBooks sorted by title.\n";
+}
+
+// Sorting Strategy 2: Sort by Book ID
+void Library::sortBooksById() {
+    sort(books.begin(), books.end(),
+         [](Book &a, Book &b) {
+             return a.getId() < b.getId();
+         });
+
+    cout << "\nBooks sorted by ID.\n";
+}
+
+// Library Report
+void Library::generateReport() {
+    int available = 0;
+    int issued = 0;
+
+    for (Book &book : books) {
+        if (book.isAvailable())
+            available++;
+        else
+            issued++;
+    }
+
+    cout << "\n--- Library Report ---\n";
+    cout << "Total Books: " << books.size() << endl;
+    cout << "Available Books: " << available << endl;
+    cout << "Issued Books: " << issued << endl;
+    cout << "Total Members: " << members.size() << endl;
+    cout << "Total Loans: " << loans.size() << endl;
 }
 
 void Library::issueBook(int bookId, int memberId, string date) {
